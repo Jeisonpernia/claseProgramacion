@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+
+       
+        <record id="view_clase_unefa_form" model="ir.ui.view">
+            <field name="name">Clase Unefa</field>
+            <field name="model">clase.unefa</field>
+            <field name="arch" type="xml">
+                <form string="Clase unefa">
+                
+                <sheet>
+                    <h1>Estudiantes UNEFA</h1>
+                    <group>
+                        <field name="name" />
+                        <field name="partner_id" />
+                        <field name="semestre_id" />
+                        <field name="materias" />
+                      
+                    </group>
+                        
+                </sheet>
+                
+                </form>
+            </field>
+        </record>
+        
+        <record id="action_clase_unefa_list" model="ir.actions.act_window">
+            <field name="name">Clase UNEFA</field>
+            <field name="res_model">clase.unefa</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        
+        <menuitem action="action_clase_unefa_list" id="menu_CLASE_UNEFA" parent="sales_team.menu_sales" sequence="15" />
+        
+
+
+</odoo>
