@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<odoo>
+<odoo>-
 
 
 
@@ -14,10 +14,7 @@
                     <h1>Estudiantes UNEFA</h1>
                     <group>
                         <field name="name" />
-                        <field name="partner_id" />
-                        <field name="semestre_id" />
-                        <field name="materias" />
-                      
+                        
                     </group>
                         
                 </sheet>
