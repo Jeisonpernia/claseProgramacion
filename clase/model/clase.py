@@ -13,4 +13,16 @@ class claseunefa(models.Model):
     
 
     name = fields.Char(string='Estudiante', required=True, readonly=False,)
+    categoria_id = fields.Many2one('clase.categoria', string='Categoria', required=True)
+
+   
+
+
+class claseCategoria(models.Model):
+    _name = "clase.categoria"
+    
+
+    name = fields.Char(string='Categoría', required=True, readonly=False,)
+    codigo = fields.Integer(string='Codigo', required=True, readonly=False,)
+    active = fields.Boolean(string='Activo', required=True, readonly=False,)
    

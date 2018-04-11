@@ -14,6 +14,7 @@
                     <h1>Estudiantes UNEFA</h1>
                     <group>
                         <field name="name" />
+                        <field name="categoria_id" />
                         
                     </group>
                         
@@ -31,6 +32,36 @@
         </record>
         
         <menuitem action="action_clase_unefa_list" id="menu_CLASE_UNEFA" parent="sales_team.menu_sales" sequence="15" />
+        
+        <record id="view_clase_categoria_form" model="ir.ui.view">
+            <field name="name">Clase Categoria</field>
+            <field name="model">clase.categoria</field>
+            <field name="arch" type="xml">
+                <form string="Clase unefa">
+                
+                <sheet>
+                    <h1>Categoria UNEFA</h1>
+                    <group>
+                        <field name="name" />
+                        <field name="codigo" />
+                        <field name="active" />
+                        
+                    </group>
+                        
+                </sheet>
+                
+                </form>
+            </field>
+        </record>
+        
+        <record id="action_clase_categoria_list" model="ir.actions.act_window">
+            <field name="name">Categorias</field>
+            <field name="res_model">clase.categoria</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        
+        <menuitem action="action_clase_categoria_list" id="menu_categoria_UNEFA" parent="sales_team.menu_sales" sequence="20" />
         
 
 
