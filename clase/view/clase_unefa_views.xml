@@ -15,6 +15,7 @@
                     <group>
                         <field name="name" />
                         <field name="categoria_id" />
+                        <field name="materias" />
                         
                     </group>
                         
